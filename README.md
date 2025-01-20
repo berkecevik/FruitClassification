@@ -81,8 +81,6 @@ This project is a **Fruit Classifier** application that identifies fruits from u
 3. Upload an image to classify the fruit and view predictions.
 
 ## Screenshots
-
-![Web Interface](./screenshots/web_interface.png)
 ![Confusion Matrix](./Outputs/confusion_matrix.png)
 
 ## Model Details
