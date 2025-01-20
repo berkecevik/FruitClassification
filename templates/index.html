@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Fruit Classifier</h1>
+
+    <form action="/" method="POST" enctype="multipart/form-data">
+        <div class="form-container">
+            <label class="custom-file-upload" for="file">Upload File</label>
+            <input type="file" name="file" id="file" required onchange="this.form.submit()">
+        </div>
+    </form>
+
+    {% if image_data %}
+    <div class="result-container">
+        <h2>Uploaded Image:</h2>
+        <img src="data:image/jpeg;base64,{{ image_data }}" alt="Uploaded Image">
+        <h2>Prediction: {{ result }}</h2>
+        <h3>Confidence: {{ (confidence * 100)|round(2) }}%</h3>
+    </div>
+    {% endif %}
+</body>
+</html>

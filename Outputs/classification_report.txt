@@ -1,0 +1,11 @@
+              precision    recall  f1-score   support
+
+       Apple       0.80      0.80      0.80        20
+      Banana       0.90      0.95      0.93        20
+       Grape       0.86      0.95      0.90        20
+       Mango       0.80      0.80      0.80        20
+  Strawberry       0.88      0.75      0.81        20
+
+    accuracy                           0.85       100
+   macro avg       0.85      0.85      0.85       100
+weighted avg       0.85      0.85      0.85       100
